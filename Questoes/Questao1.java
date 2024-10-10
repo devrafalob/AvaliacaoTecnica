@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //1º Questão
-public class Main {
+public class Questao1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe o número para verificação da sua presença na sequência de Fibonnaci.");
