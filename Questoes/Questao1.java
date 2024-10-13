@@ -14,18 +14,18 @@ public class Questao1 {
         }
         input.close();
     }
-
+        //A e B para os casos base
     public static boolean Fibonacci(int numero) {
-        int a = 0, b = 1, c = 0;
-
-        if (numero == 0 || numero == 1) { return true;
+        return FibonacciRecussao(0, 1, numero);
+    }
+        //Recurssao
+    private static boolean FibonacciRecussao(int a, int b, int numero) {
+        if (a == numero || b == numero) {
+            return true;
         }
-
-        while (c < numero) {
-            c = a + b;
-            a = b;
-            b = c;
+        if (b > numero) {
+            return false;
         }
-        return c == numero;
+        return FibonacciRecussao(b, a + b, numero);
     }
 }

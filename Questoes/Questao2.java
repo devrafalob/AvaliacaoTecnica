@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Questao 2
 public class Questao2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -13,6 +13,7 @@ public class Questao2 {
         }
         input.close();
     }
+
     public static int ContaLetraA(String frase){
         int contador = 0;
         for(int i=0; i<frase.length(); i++){
